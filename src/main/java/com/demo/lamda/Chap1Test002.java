@@ -14,13 +14,11 @@ public class Chap1Test002 {
     }
 
     // Performs FuncInter1's operation on 'a' and 'b'
-    private int operate(int a, int b, FuncInter1 fobj)
-    {
+    private int operate(int a, int b, FuncInter1 fobj) {
         return fobj.operation(a, b);
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // lambda expression for addition for two parameters
         // data type for x and y is optional.
         // This expression implements 'FuncInter1' interface
@@ -52,7 +50,7 @@ public class Chap1Test002 {
 
 
         // Pass a reverse comparator to TreeSet() via a lambda expression
-        TreeSet<String> ts=new TreeSet<String>((aStr, bStr) -> bStr.compareTo(aStr));
+        TreeSet<String> ts = new TreeSet<String>((aStr, bStr) -> bStr.compareTo(aStr));
 
         // Add elements to the Treeset
         ts.add("A");
@@ -64,7 +62,7 @@ public class Chap1Test002 {
         ts.add("G");
 
         //Display the elements .
-        for(String element : ts) {
+        for (String element : ts) {
             System.out.println(element + "");
         }
 

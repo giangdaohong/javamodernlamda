@@ -33,7 +33,7 @@ public class Chap1Test001 {
         FuncInterface anInterface = new FuncInterface() {
             @Override
             public int abstractFun(int x) {
-                return x*5;
+                return x * 5;
             }
         };
 
@@ -47,7 +47,7 @@ public class Chap1Test001 {
 
         // Using lambda expression to print all elements
         // of arrL
-       // arrL.forEach(n -> System.out.println(n));
+        // arrL.forEach(n -> System.out.println(n));
 
         // Using lambda expression to print even elements
         // of arrL
@@ -57,14 +57,15 @@ public class Chap1Test001 {
         });*/
 
 
-        Consumer<Integer> consumer = n -> {System.out.println(n);
-            System.out.println(n*10);
+        Consumer<Integer> consumer = n -> {
+            System.out.println(n);
+            System.out.println(n * 10);
         };
 
         Consumer<Integer> consumer2 = new Consumer<Integer>() {
             @Override
             public void accept(Integer integer) {
-                System.out.println(integer*1000);
+                System.out.println(integer * 1000);
             }
         };
         arrL.forEach(consumer2);
